@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+  <menu>
+      <add id="EdenDuong_SmtpPro::smtppro" resource="EdenDuong_SmtpPro::smtppro"
+           module="EdenDuong_SmtpPro" title="Smtp Pro" sortOrder="20"/>
+      <add id="EdenDuong_SmtpPro::settings" title="Settings"
+           module="EdenDuong_SmtpPro" sortOrder="20" parent="EdenDuong_SmtpPro::smtppro"
+           action="adminhtml/system_config/edit/section/smtppro" resource="EdenDuong_SmtpPro::settings"/>
+  </menu>
+</config>
